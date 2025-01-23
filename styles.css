@@ -84,11 +84,20 @@ nav {
   transform-origin: bottom left;
 }
 
-.hamburger-menu {
+/* Hamburger and Close Menu Styles */
+.hamburger-menu,
+.close-menu {
   display: none;
   font-size: 1.8rem;
   cursor: pointer;
   color: #000;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.close-menu {
+  font-size: 2.2rem;
 }
 
 /* Hero Section */
@@ -153,13 +162,11 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  /* Reduced gap between containers */
   margin: 20px;
 }
 
 .container {
   width: 22%;
-  /* Smaller width for balanced layout */
   padding: 15px;
   background-color: #f9f9f9;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -254,6 +261,12 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+
+  .hamburger-menu,
+  .close-menu {
+    display: block;
+  }
+
   .menu {
     display: none;
     flex-direction: column;
@@ -264,14 +277,11 @@ footer {
     left: 0;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
   }
 
   .menu li {
     margin: 10px 0;
-  }
-
-  .hamburger-menu {
-    display: block;
   }
 
   .hero-content {
@@ -286,7 +296,6 @@ footer {
 
   .container {
     width: 45%;
-    /* Adjusted for smaller screens */
   }
 
   .bmi-container {

@@ -29,12 +29,19 @@ document.getElementById('bmiForm').addEventListener('submit', function (e) {
   document.getElementById('bmiResult').innerHTML = resultText;
 });
 
-// Hamburger Menu Toggle
-document.querySelector('.hamburger-menu').addEventListener('click', function () {
-  const menu = document.querySelector('.menu');
-  if (menu.style.display === 'block') {
-    menu.style.display = 'none';
-  } else {
-    menu.style.display = 'block';
-  }
+// Hamburger and Close Menu Toggle
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const closeMenu = document.querySelector('.close-menu');
+const menu = document.querySelector('.menu');
+
+hamburgerMenu.addEventListener('click', function () {
+  menu.style.display = 'block';
+  hamburgerMenu.style.display = 'none';
+  closeMenu.style.display = 'block';
+});
+
+closeMenu.addEventListener('click', function () {
+  menu.style.display = 'none';
+  closeMenu.style.display = 'none';
+  hamburgerMenu.style.display = 'block';
 });
