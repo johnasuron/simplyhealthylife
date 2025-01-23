@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simply Healthy Life</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <img src="blogger.jpg" alt="Purity Ndunge Ngotho" class="blogger-photo">
+      <h1>Simply Healthy Life</h1>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#beauty">Beauty</a></li>
+        <li><a href="#food">Food</a></li>
+        <li><a href="#health">Health</a></li>
+        <li><a href="#wellbeing">Wellbeing</a></li>
+        <li><a href="#children-health">Children Health</a></li>
+        <li><a href="#medication">Medication</a></li>
+      </ul>
+      <div class="hamburger-menu">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <img src="hero.webp" alt="Healthy Lifestyle" class="hero-image">
+      <div class="hero-text">
+        <h2>Welcome to a Healthier You!</h2>
+        <p>
+          Living a healthy life doesn’t have to be complicated. At Simply Healthy Life, I am here to guide you on your
+          journey to better health, fitness, and overall well-being. Whether you’re looking for nutritious recipes,
+          fitness tips, or advice on mental health, I got you covered. Start your transformation today!
+        </p>
+        <a href="#health" class="cta-button">Explore More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Containers -->
+  <section class="blog-containers">
+    <div class="container" id="beauty">
+      <img src="beauty.jpg" alt="Beauty">
+      <h2>Beauty</h2>
+      <p>Discover the secrets to glowing skin and natural beauty.</p>
+    </div>
+    <div class="container" id="food">
+      <img src="food.jpg" alt="Food">
+      <h2>Food</h2>
+      <p>Explore healthy recipes and nutrition tips for a balanced diet.</p>
+    </div>
+    <div class="container" id="fitness">
+      <img src="fitness.jpg" alt="Fitness">
+      <h2>Fitness</h2>
+      <p>Stay fit with our workout routines and fitness guides.</p>
+    </div>
+    <div class="container" id="children-health">
+      <img src="children-health.jpg" alt="Children Health">
+      <h2>Children Health</h2>
+      <p>Learn how to keep your kids healthy and happy.</p>
+    </div>
+    <div class="container" id="flat-belly">
+      <img src="flat-belly.jpg" alt="Flat Belly">
+      <h2>Flat Belly</h2>
+      <p>Get tips and exercises for achieving a flat belly.</p>
+    </div>
+  </section>
+
+  <!-- BMI Calculator -->
+  <section class="bmi-section">
+    <div class="bmi-container">
+      <h2>Body Weight Calculator (BMI)</h2>
+      <form id="bmiForm">
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" required>
+        <label for="feet">Height (feet):</label>
+        <input type="number" id="feet" required>
+        <label for="inches">Height (inches):</label>
+        <input type="number" id="inches" required>
+        <button type="submit">Calculate</button>
+      </form>
+      <div id="bmiResult"></div>
+    </div>
+  </section>
+
+  <!-- Visitor Counter -->
+  <div class="visitor-counter">
+    <p>Visitors: <span id="visitorCount">0</span></p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Blogger: Purity Ndunge Ngotho | 0726640436</p>
+    <p>&copy; 2023 Simply Healthy Life. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
