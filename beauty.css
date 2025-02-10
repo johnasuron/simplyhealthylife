@@ -1,0 +1,266 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.8;
+  /* Improved spacing between lines */
+  font-size: 16px;
+  /* Increased font size for better readability */
+  text-align: center;
+  /* Center align all text by default */
+}
+
+header {
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blogger-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 2px solid #000;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.8rem;
+  /* Increased font size for the header */
+  color: #000;
+}
+
+/* Menu Styles */
+nav {
+  margin-top: 20px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.menu li {
+  margin: 0 20px;
+}
+
+.menu a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.4rem;
+  /* Increased font size for menu links */
+  font-weight: bold;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.menu a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.menu a:hover {
+  color: #555;
+  transform: translateY(-3px);
+}
+
+.menu a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Hamburger and Close Menu Styles */
+.hamburger-menu,
+.close-menu {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #000;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.close-menu {
+  font-size: 2.2rem;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 40px;
+  text-align: center;
+}
+
+.hero-image {
+  width: 50%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-text {
+  width: 50%;
+  max-width: 500px;
+}
+
+.hero-text h2 {
+  font-size: 2.4rem;
+  /* Increased font size for hero title */
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  /* Increased font size for hero description */
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  /* Increased padding for buttons */
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 1.2rem;
+  /* Increased font size for button text */
+}
+
+.cta-button:hover {
+  background-color: #333;
+}
+
+/* Content Sections */
+.content-section {
+  padding: 30px;
+  /* Increased padding for sections */
+  margin: 40px 0;
+  /* Increased margin for spacing */
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  /* Rounded corners for sections */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow effect */
+  text-align: left;
+  /* Align section content to the left */
+  max-width: 800px;
+  /* Restrict width for better readability */
+  margin: 0 auto;
+  /* Center align the section */
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  /* Center align header elements */
+}
+
+.section-title {
+  font-size: 2.2rem;
+  /* Increased font size for section titles */
+  color: #000;
+  margin: 0;
+}
+
+.section-image {
+  width: 200px;
+  /* Increased image size */
+  height: auto;
+  border-radius: 15px;
+  /* Rounded corners for images */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow effect */
+  transition: transform 0.3s ease;
+}
+
+.section-image:hover {
+  transform: scale(1.1);
+  /* Enlarge image slightly on hover */
+}
+
+.section-content {
+  margin-top: 20px;
+}
+
+.tips-list,
+.remedies-list {
+  margin-left: 40px;
+  /* Indent lists for better readability */
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 1.2rem;
+  /* Increased font size for footer */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image,
+  .hero-text {
+    width: 100%;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-image {
+    margin-bottom: 10px;
+    width: 150px;
+    /* Adjust image size for smaller screens */
+  }
+}
